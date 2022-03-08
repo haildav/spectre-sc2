@@ -34,6 +34,22 @@ RUN echo "CHROMIUM_FLAGS='--no-sandbox --disable-gpu --user-data-dir --window-si
 
 FROM stage-install as stage-config
 
+ADD "./files/pia-linux-3.2-06857.run" /config/
+ADD "./files/code_1.64.2-1644445741_amd64.deb" /config/
+ADD "./files/google-earth-pro-stable_7.3.0.3832-r0_amd64.deb" /config/
+
+COPY ./files/pia-linux-3.2-06857.run /config/pia-linux-3.2-06857.run
+RUN chmod +x /config/pia-linux-3.2-06857.run
+RUN dpkg -i /config/pia-linux-3.2-06857.run
+
+COPY ./files/code_1.64.2-1644445741_amd64.deb /config/code_1.64.2-1644445741_amd64.deb
+RUN chmod +x /config/code_1.64.2-1644445741_amd64.deb
+RUN dpkg -i /config/code_1.64.2-1644445741_amd64.deb
+
+COPY ./files/google-earth-pro-stable_7.3.0.3832-r0_amd64.deb /config/google-earth-pro-stable_7.3.0.3832-r0_amd64.deb
+RUN chmod +x /config/google-earth-pro-stable_7.3.0.3832-r0_amd64.deb
+RUN dpkg -i /config/google-earth-pro-stable_7.3.0.3832-r0_amd64.deb
+
 ### Arguments can be provided during build
 ARG ARG_VNC_USER
 
