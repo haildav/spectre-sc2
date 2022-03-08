@@ -2,21 +2,7 @@
 
 ## accetto/ubuntu-vnc-xfce-chromium
 
-[Docker Hub][this-docker] - [Git Hub][this-github] - [Changelog][this-changelog] - [Wiki][this-wiki]
-
-***
-
-![badge-docker-pulls][badge-docker-pulls]
-![badge-docker-stars][badge-docker-stars]
-![badge-github-release][badge-github-release]
-![badge-github-release-date][badge-github-release-date]
-![badge-github-stars][badge-github-stars]
-![badge-github-forks][badge-github-forks]
-![badge-github-open-issues][badge-github-open-issues]
-![badge-github-closed-issues][badge-github-closed-issues]
-![badge-github-releases][badge-github-releases]
-![badge-github-commits][badge-github-commits]
-![badge-github-last-commit][badge-github-last-commit]
+[Docker Hub][this-docker] 
 
  **third generation** (G3) [accetto/ubuntu-vnc-xfce-g3][accetto-docker-ubuntu-vnc-xfce-g3], [accetto/ubuntu-vnc-xfce-chromium-g3][accetto-docker-ubuntu-vnc-xfce-chromium-g3] or [accetto/ubuntu-vnc-xfce-firefox-g3][accetto-docker-ubuntu-vnc-xfce-firefox-g3].
  The newer images include also **sudo** command.
